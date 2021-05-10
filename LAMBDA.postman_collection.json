@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "189e0464-44a7-4022-b3e4-1a2f48da79df",
+		"name": "LAMBDA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Puzzle ()local)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"board\": [\n        [1, 1, 0, 0, 0, 0, 0],\n        [1, 1, 1, 1, 1, 1, 1],\n        [1, 1, 1, 1, 1, 1, 1],\n        [0, 0, 1, 1, 1, 1, 1],\n        [0, 0, 1, 1, 1, 1, 1],\n        [0, 1, 1, 1, 1, 1, 0],\n        [0, 1, 1, 1, 1, 0, 0]\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/dev/puzzle",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"dev",
+						"puzzle"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Puzzle (dev)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"board\": [\n        [1, 1, 0, 0, 0, 0, 0],\n        [1, 1, 1, 1, 1, 1, 1],\n        [1, 1, 1, 1, 1, 1, 1],\n        [0, 0, 1, 1, 1, 1, 1],\n        [0, 0, 1, 1, 1, 1, 1],\n        [0, 1, 1, 1, 1, 1, 0],\n        [0, 1, 1, 1, 1, 0, 0]\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://uhr1yd5f11.execute-api.us-east-1.amazonaws.com/dev/puzzle",
+					"protocol": "https",
+					"host": [
+						"uhr1yd5f11",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"puzzle"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
